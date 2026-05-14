@@ -68,9 +68,12 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean, toggleDar
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-            <Code2 className="text-white w-5 h-5" />
-          </div>
+          <img 
+            src="https://imgur.com/1xFHxvk.png" 
+            alt="Textocode Academy Logo" 
+            className="w-24 h-24 object-contain"
+            referrerPolicy="no-referrer"
+          />
           <span className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Textocode Academy</span>
         </div>
 
@@ -723,6 +726,9 @@ const ContactSection = () => {
                     <a href="https://wa.me/2347033968648" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 font-bold hover:underline flex items-center gap-2 italic">
                       <MessageSquare className="w-4 h-4" /> +234 703 396 8648
                     </a>
+                    <a href="https://www.linkedin.com/company/textocode-academy/" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 font-bold hover:underline flex items-center gap-2 italic">
+                      <Linkedin className="w-4 h-4" /> Textocode Academy
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1001,9 +1007,12 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
-                <Code2 className="text-white w-5 h-5" />
-              </div>
+              <img 
+                src="https://imgur.com/1xFHxvk.png" 
+                alt="Textocode Academy Logo" 
+                className="w-24 h-24 object-contain"
+                referrerPolicy="no-referrer"
+              />
               <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Textocode Academy</span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed italic">
@@ -1038,9 +1047,9 @@ const Footer = () => {
               <li><a href="https://wa.me/15878375845" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">+1 (587) 8375-845</a></li>
               <li><a href="https://wa.me/2347033968648" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">+234 703 396 8648</a></li>
               <li className="flex gap-4 mt-6">
+                <a href="https://www.linkedin.com/in/subair-nurudeen-adewale-1b46aa28b/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all" title="Instructor LinkedIn"><Linkedin className="w-5 h-5" /></a>
+                <a href="https://www.linkedin.com/company/textocode-academy/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all" title="Textocode Academy LinkedIn"><Linkedin className="w-5 h-5" /></a>
                 <a href="#" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all"><Github className="w-5 h-5" /></a>
-                <a href="https://www.linkedin.com/in/subair-nurudeen-adewale-1b46aa28b/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all"><Linkedin className="w-5 h-5" /></a>
-                <a href="#" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all"><Smartphone className="w-5 h-5" /></a>
               </li>
             </ul>
           </div>
