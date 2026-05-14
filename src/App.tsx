@@ -74,7 +74,6 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean, toggleDar
             className="w-16 h-16 object-contain"
             referrerPolicy="no-referrer"
           />
-          <span className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Textocode Academy</span>
         </div>
 
         {/* Desktop Nav */}
@@ -1013,7 +1012,6 @@ const Footer = () => {
                 className="w-16 h-16 object-contain"
                 referrerPolicy="no-referrer"
               />
-              <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Textocode Academy</span>
             </div>
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed italic">
               We teach people how to become real-world developers using AI-powered coding.
