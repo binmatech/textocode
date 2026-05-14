@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { 
   Code2, 
@@ -26,7 +26,14 @@ import {
   Sun,
   Moon,
   Linkedin,
-  MessageSquare
+  MessageSquare,
+  Users,
+  Briefcase,
+  GraduationCap,
+  Clock,
+  TrendingUp,
+  Gamepad2,
+  UserPlus
 } from "lucide-react";
 
 // --- Components ---
@@ -44,10 +51,9 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean, toggleDar
   }, []);
 
   const navLinks = [
-    { name: "Global Presence", href: "#global" },
+    { name: "Who It's For", href: "#who-it-is-for" },
     { name: "Learning Path", href: "#approach" },
     { name: "Portfolio", href: "#portfolio" },
-    { name: "Instructor", href: "#instructor" },
     { name: "Curriculum", href: "#curriculum" },
     { name: "Contact", href: "#contact" },
   ];
@@ -271,6 +277,80 @@ const LearningApproach = () => {
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{step.title}</h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base">
                 {step.desc}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const WhoThisIsFor = () => {
+  const categories = [
+    {
+      title: "Beginners with no coding experience",
+      desc: "You don’t need any background in programming. We start from the basics and guide you step-by-step until you can build real applications using AI.",
+      icon: <GraduationCap className="w-6 h-6" />,
+    },
+    {
+      title: "Office workers who want to automate tasks",
+      desc: "If you’re tired of repetitive work like reports, emails, data entry, or spreadsheets, this program will show you how to use AI tools to save hours every day.",
+      icon: <Clock className="w-6 h-6" />,
+    },
+    {
+      title: "Students and recent graduates",
+      desc: "Learn in-demand skills that can help you stand out, build projects, and even start earning online.",
+      icon: <TrendingUp className="w-6 h-6" />,
+    },
+    {
+      title: "Entrepreneurs and business owners",
+      desc: "Build your own apps, automate your business processes, and reduce costs using powerful AI tools.",
+      icon: <Briefcase className="w-6 h-6" />,
+    },
+    {
+      title: "Freelancers and side hustlers",
+      desc: "Add AI and full-stack development to your skillset so you can offer high-paying services and attract better clients.",
+      icon: <UserPlus className="w-6 h-6" />,
+    },
+    {
+      title: "Tech enthusiasts who want to level up fast",
+      desc: "If you’ve tried learning coding before but got stuck, this hands-on approach using AI will help you move faster and actually build real-world projects.",
+      icon: <Zap className="w-6 h-6" />,
+    },
+    {
+      title: "Young learners (Ages 10–16)",
+      desc: "Parents can enroll their children to start learning coding, AI, and digital skills early in a fun, structured, and engaging way. This helps them build confidence, creativity, and problem-solving skills.",
+      icon: <Gamepad2 className="w-6 h-6" />,
+    },
+  ];
+
+  return (
+    <section id="who-it-is-for" className="py-24 bg-gray-50 dark:bg-zinc-900/20 transition-colors duration-300">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">Who This Is For</h2>
+          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            This AI Coding Bootcamp is designed for anyone who wants to build real tech skills without wasting years learning theory.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {categories.map((cat, idx) => (
+            <motion.div 
+              key={cat.title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
+              className="p-8 rounded-[2.5rem] bg-white dark:bg-black border border-gray-100 dark:border-zinc-800 hover:border-purple-200 dark:hover:border-purple-900 transition-all group"
+            >
+              <div className="w-14 h-14 bg-purple-50 dark:bg-purple-900/20 text-purple-600 dark:text-purple-400 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                {cat.icon}
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">{cat.title}</h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed italic text-sm md:text-base">
+                {cat.desc}
               </p>
             </motion.div>
           ))}
@@ -829,6 +909,7 @@ export default function App() {
       <main>
         <Hero />
         <GlobalPresence />
+        <WhoThisIsFor />
         <LearningApproach />
         <PortfolioSection />
         <WhatYouWillLearn />
