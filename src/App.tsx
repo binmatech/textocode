@@ -71,7 +71,7 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean, toggleDar
           <img 
             src="https://imgur.com/1xFHxvk.png" 
             alt="Textocode Academy Logo" 
-            className="w-24 h-24 object-contain"
+            className="w-16 h-16 object-contain"
             referrerPolicy="no-referrer"
           />
           <span className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Textocode Academy</span>
@@ -1010,7 +1010,7 @@ const Footer = () => {
               <img 
                 src="https://imgur.com/1xFHxvk.png" 
                 alt="Textocode Academy Logo" 
-                className="w-24 h-24 object-contain"
+                className="w-16 h-16 object-contain"
                 referrerPolicy="no-referrer"
               />
               <span className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">Textocode Academy</span>
