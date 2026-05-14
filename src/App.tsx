@@ -583,8 +583,16 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-bold text-gray-900 dark:text-white mb-1">Direct Contact</h4>
-                  <p className="text-gray-600 dark:text-gray-400">Reach out via email for personal inquiries.</p>
-                  <a href="mailto:nuddywale@gmail.com" className="text-purple-600 dark:text-purple-400 font-bold hover:underline">nuddywale@gmail.com</a>
+                  <p className="text-gray-600 dark:text-gray-400">Reach out via email or WhatsApp.</p>
+                  <a href="mailto:nuddywale@gmail.com" className="text-purple-600 dark:text-purple-400 font-bold hover:underline block">nuddywale@gmail.com</a>
+                  <div className="mt-2 space-y-1">
+                    <a href="https://wa.me/15878375845" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 font-bold hover:underline flex items-center gap-2 italic">
+                      <MessageSquare className="w-4 h-4" /> +1 (587) 8375-845
+                    </a>
+                    <a href="https://wa.me/2347033968648" target="_blank" rel="noopener noreferrer" className="text-purple-600 dark:text-purple-400 font-bold hover:underline flex items-center gap-2 italic">
+                      <MessageSquare className="w-4 h-4" /> +234 703 396 8648
+                    </a>
+                  </div>
                 </div>
               </div>
               
@@ -860,6 +868,8 @@ const Footer = () => {
             <h4 className="font-bold text-gray-900 dark:text-white mb-6">Contact</h4>
             <ul className="space-y-4 text-gray-500 dark:text-gray-400">
               <li><a href="mailto:nuddywale@gmail.com" className="hover:text-purple-600 transition-colors">nuddywale@gmail.com</a></li>
+              <li><a href="https://wa.me/15878375845" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">+1 (587) 8375-845</a></li>
+              <li><a href="https://wa.me/2347033968648" target="_blank" rel="noopener noreferrer" className="hover:text-purple-600 transition-colors">+234 703 396 8648</a></li>
               <li className="flex gap-4 mt-6">
                 <a href="#" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all"><Github className="w-5 h-5" /></a>
                 <a href="https://www.linkedin.com/in/subair-nurudeen-adewale-1b46aa28b/" target="_blank" rel="noopener noreferrer" className="p-2 bg-gray-50 dark:bg-zinc-900 rounded-lg hover:bg-purple-50 dark:hover:bg-purple-900 hover:text-purple-600 dark:hover:text-purple-400 transition-all"><Linkedin className="w-5 h-5" /></a>
