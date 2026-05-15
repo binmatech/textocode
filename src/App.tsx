@@ -67,14 +67,14 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: { isDarkMode: boolean, toggleDar
         : "bg-transparent py-6"
     }`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-        <div className="flex items-center gap-2">
+        <a href="#" className="flex items-center gap-2">
           <img 
             src="https://imgur.com/1xFHxvk.png" 
             alt="Textocode Academy Logo" 
             className="w-16 h-16 object-contain"
             referrerPolicy="no-referrer"
           />
-        </div>
+        </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
@@ -1005,14 +1005,14 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-6">
+            <a href="#" className="flex items-center gap-2 mb-6">
               <img 
                 src="https://imgur.com/1xFHxvk.png" 
                 alt="Textocode Academy Logo" 
                 className="w-16 h-16 object-contain"
                 referrerPolicy="no-referrer"
               />
-            </div>
+            </a>
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed italic">
               We teach people how to become real-world developers using AI-powered coding.
             </p>
